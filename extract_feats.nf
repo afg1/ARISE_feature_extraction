@@ -8,7 +8,7 @@ process download_fasta {
 
     """
     wget https://ftp.ebi.ac.uk/pub/databases/RNAcentral/current_release/sequences/rnacentral_active.fasta.gz
-    tar -xf rnacentral_active.fasta.gz
+    gzip -d rnacentral_active.fasta.gz
 
     """
 }
