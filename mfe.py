@@ -40,7 +40,7 @@ def calculate_energy(arg):
 @click.argument("fasta")
 @click.argument("structure")
 @click.argument("output")
-@click.option("--chunksize", defaul=1000)
+@click.option("--chunksize", default=1000)
 def cli(fasta, structure, output, chunksize):
     sequences = SeqIO.index(fasta, "fasta")
     chunk = []
