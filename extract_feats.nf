@@ -27,7 +27,7 @@ process get_structures {
 }
 
 process extract_features {
-    container 'ghcr.io/afg1/arise:vrna'
+    container 'oras://ghcr.io/afg1/arise:vrna'
     input:
         tuple path(fasta), path(structures)
 
