@@ -60,3 +60,7 @@ def cli(fasta, structure, output, chunksize):
         chunk.append({"urs": urs, "seq": seq})
 
     feature_df.write_csv(output, has_header=False)
+
+
+if __name__ == "__main__":
+    cli()
