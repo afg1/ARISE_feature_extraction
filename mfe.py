@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import RNA
 from Bio import SeqIO
 import polars as pl

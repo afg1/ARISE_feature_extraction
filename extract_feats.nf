@@ -35,7 +35,7 @@ process extract_features {
         path("secondary_structure_energy_and_model.csv")
 
     """
-    python mfe.py $fasta $structures secondary_structure_energy_and_model.csv
+    mfe.py $fasta $structures secondary_structure_energy_and_model.csv
     """
 
 }
