@@ -21,7 +21,7 @@ def select_chunk(chunk_df, structures):
         .filter(pl.col("urs").is_in(urs_selection))
         .collect()
     )
-    return selected_structures
+    return selected_structures.join(chunk_df, on="urs")
 
 
 def calculate_energy(arg):
