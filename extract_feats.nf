@@ -52,7 +52,7 @@ workflow {
     | set { structures }
     
     _ready | download_fasta \
-    | splitFasta(by: 10000, file: true) \
+    | splitFasta(by: 1000000, file: true) \
     | set { sequences }
 
     sequences.combine(structures) | extract_features \
